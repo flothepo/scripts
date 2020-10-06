@@ -19,7 +19,7 @@ subBar = "sub"
 polybar :: Monitor -> IO ()
 polybar monitor = do
   setEnv "MONITOR" $ monitorId monitor
-  void $ spawnProcess "polybar" [bar]
+  void $ spawnProcess "polybar" [bar, "--reload"]
   where bar = if isPrimary monitor then mainBar else subBar
 
 killPolybar :: IO ()
