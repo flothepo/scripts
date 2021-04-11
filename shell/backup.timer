@@ -1,0 +1,9 @@
+[Unit]
+Description= Backup btrfs subvolumes to external disk
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,5 @@
+[Unit]
+Description= Backup btrfs subvolumes to external disk
+
+[Service]
+ExecStart=/home/flo/.local/bin/backup
