@@ -1,4 +1,4 @@
 #!/bin/sh
 
 # Decrypt a password-protected pdf
-qpdf --decrypt --password=$2 $1 out && mv out $1
+qpdf --decrypt --password="$2" "$1" out && mv out "$1"
