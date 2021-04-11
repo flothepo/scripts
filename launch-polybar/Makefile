@@ -1,10 +1,10 @@
 .PHONY : all, install, clean
 
 all:
-	stack build
+	cabal build
 
 clean:
-	stack clean
+	cabal clean
 
 install:
-	stack install
+	cabal new-install
