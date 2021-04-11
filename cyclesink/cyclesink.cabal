@@ -1,0 +1,11 @@
+cabal-version:       >=1.10
+name:                cyclesink
+version:             0.1.0.0
+synopsis:            cycle trough pulseaudio sinks
+build-type:          Simple
+
+executable cyclesink
+  main-is:             Main.hs
+  build-depends:       base >=4.14 && <4.15
+                       , process
+  default-language:    Haskell2010
