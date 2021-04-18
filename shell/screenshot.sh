@@ -1,6 +1,6 @@
 #!/bin/sh
 
 p=$(date +%s)
-d="$HOME/Pictures/screenshots/"
+d="$HOME/data/pictures/screenshots/"
 
-maim -s "$d$p.png" && notify-send "Screenshot taken" "$d$p.png" --icon=dialog-information
+grim -g "$(slurp)" "$d$p.png" && notify-send "Screenshot taken" "$d$p.png" --icon=dialog-information
