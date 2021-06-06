@@ -8,7 +8,7 @@ case "$action" in
     "reboot")
         reboot;;
     "suspend")
-        systemctl suspend;;
+        swaylock -f && systemctl suspend;;
     "logout")
         swaymsg exit;;
 esac
